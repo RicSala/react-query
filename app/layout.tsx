@@ -22,7 +22,7 @@ export default function RootLayout({
                 <ReactQueryDevtools
                     initialIsOpen={true}
                     buttonPosition='bottom-left'
-                    position='left'
+                    position='top'
                 />
                 <body className={`${inter.className} h-full`}>{children}</body>
             </html>

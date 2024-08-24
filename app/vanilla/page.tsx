@@ -8,7 +8,7 @@ export default async function Page({
     params: { slug: string };
     searchParams: { [key: string]: string | string[] | undefined };
 }) {
-    const serverPosts = await postGetManyAction();
+    const serverPosts = await postGetManyAction({});
 
     return (
         <>

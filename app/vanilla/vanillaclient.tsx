@@ -11,7 +11,7 @@ type VanillaClientProps = {
 export function VanillaClient({ serverPosts }: VanillaClientProps) {
     const { data, isSuccess } = useQuery({
         queryKey: ['vanillaClient'],
-        queryFn: () => postGetManyAction(),
+        queryFn: () => postGetManyAction({ take: 5 }),
         initialData: serverPosts,
     });
 
